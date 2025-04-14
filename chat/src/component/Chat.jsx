@@ -6,7 +6,7 @@ import Message from './Message';
 
 
 let socket;
-const ENDPOINT = "http://localhost:4500/";
+const ENDPOINT = "https://chat-app-311h.onrender.com";
 
 const Chat = () => {
     const [id, setid] = useState("");
