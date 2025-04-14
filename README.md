@@ -17,12 +17,20 @@ git clone https://github.com/username/chat-app.git
 ```
 2. Install dependencies
 ```bash
-cd chat-app/frontend
+cd chat-app/chat
+npm install
+
+cd chat-app/socket
 npm install
 ```
 3. Start the development server
 ```bash
+chat :-
 npm run dev
+
+socket :-
+npm start
+
 ```
 
 ## Usage
