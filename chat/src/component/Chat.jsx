@@ -28,15 +28,15 @@ const Chat = () => {
         socket.emit('joined', { user });
 
         socket.on('welcome', (data) => {
-            setMessages(prev => [...prev, data]);
+            setMessages(prev => [...prev, { ...data, system: true }]);
         });
 
         socket.on('userJoined', (data) => {
-            setMessages(prev => [...prev, data]);
+            setMessages(prev => [...prev, { ...data, system: true }]);
         });
 
         socket.on('leave', (data) => {
-            setMessages(prev => [...prev, data]);
+            setMessages(prev => [...prev, { ...data, system: true }]);
         });
 
         return () => {
@@ -69,6 +69,7 @@ const Chat = () => {
                             user={item.id === id ? '' : item.user}
                             message={item.message}
                             classs={item.id === id ? 'right' : 'left'}
+                            system={item.system}
                         />
                     ))}
                 </ReactScrollToBottom>

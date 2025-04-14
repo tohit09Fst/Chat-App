@@ -11,6 +11,16 @@
 }
 
 
+.message.system {
+    max-width: 20%;
+    margin: 0 auto 10px auto;
+    padding: 8px;
+    border-radius: 96px;
+    font-size: 12px;
+    text-align: center;
+    background-color: #e0f7fa;
+    color: #00796b;
+}
 
 
 .message {
