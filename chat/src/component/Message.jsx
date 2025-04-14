@@ -2,7 +2,7 @@ import React from 'react';
 
 const Message = ({ user, message, classs }) => {
     return (
-        <div className={`p-4 m-4 rounded-xl text-lg font-sans ${classs}`}>
+        <div className={`message ${classs} animate-fade-in`}>
             {user ? `${user}: ${message}` : `You: ${message}`}
         </div>
     );
